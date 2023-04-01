@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="favico.svg">
+    <title>StarBeans</title>
+</head>
+<body >
+    <header id="header">
+        <div class="left">
+            <img id="header-logo" src="./src/assets/logo/Starbeans-logo-line-dark.svg" alt="">
+        </div>
+        <div class="nav-bar">
+            <button class="active" onclick="location.href = './index.html'">Home</button>
+            <button onclick="location.href = './src/pages/about.html'">About</button>
+            <button onclick="location.href = './src/pages/menu.html'">Menu</button>
+            
+        </div>
+        <div class="right">
+            <button onclick="toggleDark()" id="toggle-dark-btn"  class="toggle-dark"><img id="toggle-dark" src="./src/assets/icons/dark.svg" alt=""></button>
+            <button onclick="showProfile()" id="profile-btn"><img id="profile" src="./src/assets/icons/profile-dark.svg" alt=""></button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="left">
+            <div class="hero-text">
+                <h1 id="text-1">Today's Good Mood is</h1> 
+                <h1 id="text-2">Sponsored by <img id="hero-logo" src="./src/assets/logo/Starbeans-logo-line-light.svg" alt=""></h1>
+                <br>
+                <h2>complete your day and get your <br> favorite drink now</h2>
+                <br>
+                <div class="hero-btns">
+                    <button class="shop-now button-30">Shop Now</button>
+                    <button class="about-us button-30">About Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="right"><img class="coffee-cup" src="./src/assets/IMG/Coffee-cup.png" alt="coffee-cup"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
