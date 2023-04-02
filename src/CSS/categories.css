@@ -1,0 +1,35 @@
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+
+}
+
+.categories .cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--text);
+}
+
+.categories .cat:hover {
+    scale: .975;
+}
+
+.categories .cat:active {
+    opacity: .7;
+}
+
+.categories .cat img {
+    width: 100px;
+}
+
+@media (max-width: 650px){
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px;
+    }
+}

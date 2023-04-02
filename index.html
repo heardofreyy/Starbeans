@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/CSS/loader.css">
+    <link rel="stylesheet" href="./src/CSS/header.css">
+    <link rel="stylesheet" href="./src/CSS/hero.css">
+    <link rel="stylesheet" href="./src/CSS/categories.css">
     <link rel="icon" href="favico.svg">
     <title>StarBeans</title>
 </head>
@@ -16,7 +20,7 @@
         <div class="nav-bar">
             <button class="active" onclick="location.href = './index.html'">Home</button>
             <button onclick="location.href = './src/pages/about.html'">About</button>
-            <button onclick="location.href = './src/pages/menu.html'">Menu</button>
+            <button onclick="location.href = '#menu'">Menu</button>
             
         </div>
         <div class="right">
@@ -43,6 +47,18 @@
         </div>
         <div class="right"><img class="coffee-cup" src="./src/assets/IMG/Coffee-cup.png" alt="coffee-cup"></div>
     </section>
+    
+    <section class="categories">
+        <div class="cat"><img src="./src/assets/icons/coffee-cup-light.png" alt=""><h1>Hot Drinks</h1></div>
+        <div class="cat"><img src="./src/assets/icons/juice-light.png" alt=""><h1>Cold Drinks</h1></div>
+        <div class="cat"><img src="./src/assets/icons/croissant-light.png" alt=""><h1>Dessert</h1></div>
+        <div class="cat"><img src="./src/assets/icons/ice-cream-light.png" alt=""><h1>IceCream</h1></div>
+    </section>
+    
+    <section class="menu" >
+        <h1 id="menu" >Menu</h1>
+    </section>
+
     <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
     <script src="./index.js" async></script>
 </body>
