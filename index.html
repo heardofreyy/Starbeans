@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/CSS/header.css">
     <link rel="stylesheet" href="./src/CSS/hero.css">
     <link rel="stylesheet" href="./src/CSS/categories.css">
+    <link rel="stylesheet" href="./src/CSS/menu.css">
     <link rel="icon" href="favico.svg">
     <title>StarBeans</title>
 </head>
@@ -21,7 +22,6 @@
             <button class="active" onclick="location.href = './index.html'">Home</button>
             <button onclick="location.href = './src/pages/about.html'">About</button>
             <button onclick="location.href = '#menu'">Menu</button>
-            
         </div>
         <div class="right">
             <button onclick="toggleDark()" id="toggle-dark-btn"  class="toggle-dark"><img id="toggle-dark" src="./src/assets/icons/dark.svg" alt=""></button>
@@ -49,17 +49,59 @@
     </section>
     
     <section class="categories">
-        <div class="cat"><img src="./src/assets/icons/coffee-cup-light.png" alt=""><h1>Hot Drinks</h1></div>
-        <div class="cat"><img src="./src/assets/icons/juice-light.png" alt=""><h1>Cold Drinks</h1></div>
-        <div class="cat"><img src="./src/assets/icons/croissant-light.png" alt=""><h1>Dessert</h1></div>
-        <div class="cat"><img src="./src/assets/icons/ice-cream-light.png" alt=""><h1>IceCream</h1></div>
+        <div onclick="goToSecHref('hotDrinks')" class="cat"><img id="hot-drinks-cat" src="./src/assets/icons/coffee-cup-light.png" alt=""><h1>Hot Drinks</h1></div>
+        <div onclick="goToSecHref('coldDrinks')" class="cat"><img id="cold-drinks-cat" src="./src/assets/icons/juice-light.png" alt=""><h1>Cold Drinks</h1></div>
+        <div onclick="goToSecHref('dessert')" class="cat"><img id="dessert-cat" src="./src/assets/icons/croissant-light.png" alt=""><h1>Dessert</h1></div>
+        <div onclick="goToSecHref('iceCream')" class="cat"><img id="ice-cream-cat" src="./src/assets/icons/ice-cream-light.png" alt=""><h1>IceCream</h1></div>
     </section>
     
     <section class="menu" >
-        <h1 id="menu" >Menu</h1>
+        <h1 id="menu" >Our Menu</h1>
+        <div class="menu-content">
+            <div class="side-bar">
+                <button onclick="goToSec('hotDrinks')" id="hot-drinks-btn" class="cat-btn active"><img id="hot-drinks-btn-icon" src="./src/assets/icons/coffee-cup-dark.png" alt=""><h1>Hot Drinks</h1></button>
+                <button onclick="goToSec('coldDrinks')" id="cold-drinks-btn" class="cat-btn"><img id="cold-drinks-btn-icon" src="./src/assets/icons/juice-dark.png" alt=""><h1>Cold Drinks</h1></button>
+                <button onclick="goToSec('dessert')" id="dessert-btn" class="cat-btn"><img id="dessert-btn-icon" src="./src/assets/icons/croissant-dark.png" alt=""><h1>Dessert</h1></button>
+                <button onclick="goToSec('iceCream')" id="ice-cream-btn" class="cat-btn"><img id="ice-cream-btn-icon" src="./src/assets/icons/ice-cream-dark.png" alt=""><h1>Ice Cream</h1></button>
+            </div>
+            <div class="items">
+                <div id="hot-drinks" class="hot-drinks cat-itmes">
+                    <div class="item"><h2>Expresso</h2><h2>50 da</h2></div>
+                    <div class="item"><h2>Tea</h2><h2>50 da</h2></div>
+                    <div class="item"><h2>Milk Coffee</h2><h2>80 da</h2></div>
+                    <div class="item"><h2>Expresso and Milk</h2><h2>90 da</h2></div>
+                    <div class="item"><h2>Milk</h2><h2>40 da</h2></div>
+                    <div class="item"><h2>Nespresso</h2><h2>150 da</h2></div>
+                </div>
+                <div id="cold-drinks" class="cold-drinks cat-itmes hidden">
+                    <div class="item"><h2>Juice</h2><h2>50 da</h2></div>
+                    <div class="item"><h2>Cola</h2><h2>80 da</h2></div>
+                    <div class="item"><h2>Milk Juice</h2><h2>80 da</h2></div>
+                    <div class="item"><h2>Energy Drink</h2><h2>100 da</h2></div>
+                    <div class="item"><h2>Pressed Juice</h2><h2>150 da</h2></div>
+                    <div class="item"><h2>Ice Coffee</h2><h2>150 da</h2></div>
+                </div>
+                <div id="dessert" class="dessert cat-itmes hidden">
+                    <div class="item"><h2>Croissant</h2><h2>30 da</h2></div>
+                    <div class="item"><h2>Patstry Slice</h2><h2>100 da</h2></div>
+                    <div class="item"><h2>Millefielle</h2><h2>50 da</h2></div>
+                    <div class="item"><h2>Cake</h2><h2>60 da</h2></div>
+                    <div class="item"><h2>crêpes</h2><h2>250 da</h2></div>
+                    <div class="item"><h2>Shamiya</h2><h2>50 da</h2></div>
+                </div>
+                <div id="ice-cream" class="ice-cream cat-itmes hidden">
+                    <div class="item"><h2>Small Pot</h2><h2>50 da</h2></div>
+                    <div class="item"><h2>Medium Pot</h2><h2>100 da</h2></div>
+                    <div class="item"><h2>Big Pot</h2><h2>150 da</h2></div>
+                    <div class="item"><h2>Panaché</h2><h2>150 da</h2></div>
+                    <div class="item"><h2>Cornet</h2><h2>40 da</h2></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
     <script src="./index.js" async></script>
+    <script src="./src/JS/Menu.js"></script>
 </body>
 </html>

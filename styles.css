@@ -19,6 +19,15 @@
     box-sizing: border-box;
 }
 
+h1,h2,button {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 button {
     background-color: transparent;
@@ -29,18 +38,26 @@ button {
 body {
     --bg: #ece0d1;
     --sec-bg : #dbc1ac;
+    --bg-menu:  #967259;
     --text: #634832;
+    --text-wb: #040404;
+    --text-wb-menu: #f4f4f4;
+
+
     --yy: #967259;
 
-    
+
     background-color: var(--bg);
     font-family: 'Tajawal-Regular';
-    min-height: 1500px;
+    min-height: 2000px;
 }
 
 .dark {
     --bg:#634832 ;
     --sec-bg : #38220f;
+    --bg-menu:  #967259;
     --text: #dbc1ac;
+    --text-wb: #f4f4f4;
+    --text-wb-menu: #040404;
 }
 

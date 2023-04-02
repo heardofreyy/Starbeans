@@ -7,6 +7,15 @@ const profile = document.getElementById('profile');
 const loader = document.getElementById('loader')
 const hero = document.getElementById('hero');
 
+const hotDrinksCat = document.getElementById('hot-drinks-cat');
+const coldDrinksCat = document.getElementById('cold-drinks-cat');
+const dessertCat = document.getElementById('dessert-cat');
+const iceCreamCat = document.getElementById('ice-cream-cat');
+
+const hotDrinksBtnIcon  = document.getElementById('hot-drinks-btn-icon');
+const coldDrinksBtnIcon  = document.getElementById('cold-drinks-btn-icon');
+const dessertBtnIcon  = document.getElementById('dessert-btn-icon');
+const iceCreamBtnIcon  = document.getElementById('ice-cream-btn-icon');
 
 
 window.addEventListener('load', () => {
@@ -35,11 +44,33 @@ function changeToDark() {
         profile.src = "./src/assets/icons/profile-light.svg"
         toggleDarkIcon.src = "./src/assets/icons/light.svg"
 
+        hotDrinksCat.src = "./src/assets/icons/coffee-cup-light.png"
+        coldDrinksCat.src = "./src/assets/icons/juice-light.png"
+        dessertCat.src = "./src/assets/icons/croissant-light.png"
+        iceCreamCat.src = "./src/assets/icons/ice-cream-light.png"
+
+        hotDrinksBtnIcon.src = "./src/assets/icons/coffee-cup-light.png"
+        coldDrinksBtnIcon.src = "./src/assets/icons/juice-light.png"
+        dessertBtnIcon.src = "./src/assets/icons/croissant-light.png"
+        iceCreamBtnIcon.src = "./src/assets/icons/ice-cream-light.png"
+
+
     } else {
         
         headerLogo.src = "./src/assets/logo/Starbeans-logo-line-dark.svg"
         profile.src = "./src/assets/icons/profile-dark.svg"
         toggleDarkIcon.src = "./src/assets/icons/dark.svg"
+
+        hotDrinksCat.src = "./src/assets/icons/coffee-cup-dark.png"
+        coldDrinksCat.src = "./src/assets/icons/juice-dark.png"
+        dessertCat.src = "./src/assets/icons/croissant-dark.png"
+        iceCreamCat.src = "./src/assets/icons/ice-cream-dark.png"
+
+        hotDrinksBtnIcon.src = "./src/assets/icons/coffee-cup-dark.png"
+        coldDrinksBtnIcon.src = "./src/assets/icons/juice-dark.png"
+        dessertBtnIcon.src = "./src/assets/icons/croissant-dark.png"
+        iceCreamBtnIcon.src = "./src/assets/icons/ice-cream-dark.png"
+
     }
 
     
