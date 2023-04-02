@@ -144,6 +144,10 @@ section.hero {
     overflow-x: hidden;
     
 }  
+
+#bgImg {
+    display: none;
+}
   
 .coffee-cup {
     position: absolute;
