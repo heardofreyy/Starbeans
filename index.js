@@ -4,7 +4,15 @@ const toggleDarkIcon = document.getElementById('toggle-dark');
 const headerLogo = document.getElementById('header-logo');
 const header = document.getElementById('header');
 const profile = document.getElementById('profile');
+const loader = document.getElementById('loader')
+const hero = document.getElementById('hero')
 
+window.addEventListener('load', () => {
+    console.log('loaded');
+    
+    document.body.removeChild(loader)
+    hero.style.display= 'flex';
+})
 
 function toggleDark() {
 
@@ -28,7 +36,3 @@ function toggleDark() {
 function showProfile() {
     console.log('shown profile');
 }
-
-var src = $('section.hero').css('background');
-console.log(src);
-var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
