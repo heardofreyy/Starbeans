@@ -8,30 +8,56 @@ const loader = document.getElementById('loader')
 const hero = document.getElementById('hero');
 
 
+
 window.addEventListener('load', () => {
     console.log('loaded');
     // alert('loaded')
     
     document.body.removeChild(loader)
     hero.style.display= 'flex';
+    changeToDark()
 })
 
-function toggleDark() {
+
+
+function changeToDark() {
+    const isdarkLS = localStorage.getItem('isdark')
+
+    if(isdarkLS === 'true') {
+        body.classList.add('dark');
+    }else if (isdarkLS === 'false' ) {
+        body.classList.remove('dark');
+    }
 
     //header : 
     if (body.classList.contains('dark')) {
-        headerLogo.src = "./src/assets/logo/Starbeans-logo-line-dark.svg"
-        profile.src = "./src/assets/icons/profile-dark.svg"
-        toggleDarkIcon.src = "./src/assets/icons/dark.svg"
-
-
-    } else {
         headerLogo.src = "./src/assets/logo/Starbeans-logo-line-light.svg"
         profile.src = "./src/assets/icons/profile-light.svg"
         toggleDarkIcon.src = "./src/assets/icons/light.svg"
+
+    } else {
+        
+        headerLogo.src = "./src/assets/logo/Starbeans-logo-line-dark.svg"
+        profile.src = "./src/assets/icons/profile-dark.svg"
+        toggleDarkIcon.src = "./src/assets/icons/dark.svg"
     }
 
-    body.classList.toggle('dark');
+    
+}
+
+function toggleDark() {
+
+    const isdarkLS = localStorage.getItem('isdark')
+
+    if(isdarkLS === 'true') {
+        localStorage.setItem('isdark', false)
+    }else if (isdarkLS === 'false' ) {
+        localStorage.setItem('isdark', true)
+    }
+
+    changeToDark()
+
+    
 
 }
 
