@@ -35,6 +35,14 @@ button {
     font-family: 'Tajawal-Bold';
 }
 
+button:hover {
+    scale: .975;
+}
+
+button:active {
+    opacity: .7;
+}
+
 body {
     --bg: #ece0d1;
     --sec-bg : #dbc1ac;
@@ -49,7 +57,7 @@ body {
 
     background-color: var(--bg);
     font-family: 'Tajawal-Regular';
-    min-height: 2000px;
+    min-height: 3000px;
 }
 
 .dark {
@@ -67,4 +75,11 @@ hr {
     height: 4px;
     background-color: var(--text);
     border-radius: 50%;
+}
+
+.hr-text{
+    font-size: 48px;
+    color: var(--text);
+    text-align: center;
+    padding: 30px;
 }

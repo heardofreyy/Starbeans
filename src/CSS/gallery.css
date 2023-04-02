@@ -1,0 +1,59 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 42px;
+    width: 100%;    
+}
+
+.gallery-content img {
+    width: 320px;
+}
+
+.page1,.page2,.page3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 320px);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hidden-page{
+    display: none;
+}
+
+.switchers {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 42px);
+    gap: 3px;
+}
+
+.switchers button {
+    position: relative;
+    color: var(--text);
+    border: solid 2px;
+    font-size: larger;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.switchers button span{
+    position: absolute;
+    top: 10px;
+    left: 14px;
+}
+
+.active-switcher {
+    color: var(--bg) !important;
+    background-color: var(--text);
+    border: solid 2px var(--text) !important;
+
+}

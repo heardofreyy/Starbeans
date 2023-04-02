@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,14 @@
     <link rel="stylesheet" href="./src/CSS/hero.css">
     <link rel="stylesheet" href="./src/CSS/categories.css">
     <link rel="stylesheet" href="./src/CSS/menu.css">
+    <link rel="stylesheet" href="./src/CSS/gallery.css">
+    <link rel="stylesheet" href="./src/CSS/about.css">
+    <link rel="stylesheet" href="./src/CSS/contact.css">
     <link rel="icon" href="favico.svg">
     <title>StarBeans</title>
 </head>
-<body >
+
+<body>
     <header id="header">
         <div class="left">
             <img id="header-logo" src="./src/assets/logo/Starbeans-logo-line-dark.svg" alt="">
@@ -22,20 +27,29 @@
             <button class="active" onclick="location.href = './index.html'">Home</button>
             <button onclick="location.href = './src/pages/about.html'">About</button>
             <button onclick="location.href = '#menu'">Menu</button>
+            <button onclick="location.href = '#gallery'">Gallery</button>
         </div>
         <div class="right">
-            <button onclick="toggleDark()" id="toggle-dark-btn"  class="toggle-dark"><img id="toggle-dark" src="./src/assets/icons/dark.svg" alt=""></button>
-            <button onclick="showProfile()" id="profile-btn"><img id="profile" src="./src/assets/icons/profile-dark.svg" alt=""></button>
+            <button onclick="toggleDark()" id="toggle-dark-btn" class="toggle-dark"><img id="toggle-dark"
+                    src="./src/assets/icons/dark.svg" alt=""></button>
+            <button onclick="showProfile()" id="profile-btn"><img id="profile" src="./src/assets/icons/profile-dark.svg"
+                    alt=""></button>
         </div>
     </header>
     <div id="loader">
-        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <section id="hero" class="hero">
         <div class="left">
             <div class="hero-text">
-                <h1 id="text-1">Today's Good Mood is</h1> 
-                <h1 id="text-2">Sponsored by <img id="hero-logo" src="./src/assets/logo/Starbeans-logo-line-light.svg" alt=""></h1>
+                <h1 id="text-1">Today's Good Mood is</h1>
+                <h1 id="text-2">Sponsored by <img id="hero-logo" src="./src/assets/logo/Starbeans-logo-line-light.svg"
+                        alt=""></h1>
                 <br>
                 <h2>complete your day and get your <br> favorite drink now</h2>
                 <br>
@@ -47,63 +61,228 @@
         </div>
         <div class="right"><img class="coffee-cup" src="./src/assets/IMG/Coffee-cup.png" alt="coffee-cup"></div>
     </section>
-    
-    <section class="categories">
-        <div onclick="goToSecHref('hotDrinks')" class="cat"><img id="hot-drinks-cat" src="./src/assets/icons/coffee-cup-light.png" alt=""><h1>Hot Drinks</h1></div>
-        <div onclick="goToSecHref('coldDrinks')" class="cat"><img id="cold-drinks-cat" src="./src/assets/icons/juice-light.png" alt=""><h1>Cold Drinks</h1></div>
-        <div onclick="goToSecHref('dessert')" class="cat"><img id="dessert-cat" src="./src/assets/icons/croissant-light.png" alt=""><h1>Dessert</h1></div>
-        <div onclick="goToSecHref('iceCream')" class="cat"><img id="ice-cream-cat" src="./src/assets/icons/ice-cream-light.png" alt=""><h1>IceCream</h1></div>
-    </section>
-    
-    <hr/>
 
-    <section class="menu" >
-        <h1 id="menu" >Our Menu</h1>
+    <section class="categories">
+        <div onclick="goToSecHref('hotDrinks')" class="cat"><img id="hot-drinks-cat"
+                src="./src/assets/icons/coffee-cup-light.png" alt="">
+            <h1>Hot Drinks</h1>
+        </div>
+        <div onclick="goToSecHref('coldDrinks')" class="cat"><img id="cold-drinks-cat"
+                src="./src/assets/icons/juice-light.png" alt="">
+            <h1>Cold Drinks</h1>
+        </div>
+        <div onclick="goToSecHref('dessert')" class="cat"><img id="dessert-cat"
+                src="./src/assets/icons/croissant-light.png" alt="">
+            <h1>Dessert</h1>
+        </div>
+        <div onclick="goToSecHref('iceCream')" class="cat"><img id="ice-cream-cat"
+                src="./src/assets/icons/ice-cream-light.png" alt="">
+            <h1>IceCream</h1>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="menu">
+        <h1 class="hr-text" id="menu">Our Menu</h1>
         <div class="menu-content">
             <div class="side-bar">
-                <button onclick="goToSec('hotDrinks')" id="hot-drinks-btn" class="cat-btn active"><img id="hot-drinks-btn-icon" src="./src/assets/icons/coffee-cup-dark.png" alt=""><h1>Hot Drinks</h1></button>
-                <button onclick="goToSec('coldDrinks')" id="cold-drinks-btn" class="cat-btn"><img id="cold-drinks-btn-icon" src="./src/assets/icons/juice-dark.png" alt=""><h1>Cold Drinks</h1></button>
-                <button onclick="goToSec('dessert')" id="dessert-btn" class="cat-btn"><img id="dessert-btn-icon" src="./src/assets/icons/croissant-dark.png" alt=""><h1>Dessert</h1></button>
-                <button onclick="goToSec('iceCream')" id="ice-cream-btn" class="cat-btn"><img id="ice-cream-btn-icon" src="./src/assets/icons/ice-cream-dark.png" alt=""><h1>Ice Cream</h1></button>
+                <button onclick="goToSec('hotDrinks')" id="hot-drinks-btn" class="cat-btn active"><img
+                        id="hot-drinks-btn-icon" src="./src/assets/icons/coffee-cup-dark.png" alt="">
+                    <h1>Hot Drinks</h1>
+                </button>
+                <button onclick="goToSec('coldDrinks')" id="cold-drinks-btn" class="cat-btn"><img
+                        id="cold-drinks-btn-icon" src="./src/assets/icons/juice-dark.png" alt="">
+                    <h1>Cold Drinks</h1>
+                </button>
+                <button onclick="goToSec('dessert')" id="dessert-btn" class="cat-btn"><img id="dessert-btn-icon"
+                        src="./src/assets/icons/croissant-dark.png" alt="">
+                    <h1>Dessert</h1>
+                </button>
+                <button onclick="goToSec('iceCream')" id="ice-cream-btn" class="cat-btn"><img id="ice-cream-btn-icon"
+                        src="./src/assets/icons/ice-cream-dark.png" alt="">
+                    <h1>Ice Cream</h1>
+                </button>
             </div>
             <div class="items">
                 <div id="hot-drinks" class="hot-drinks cat-itmes">
-                    <div class="item"><h2>Expresso</h2><h2>50 da</h2></div>
-                    <div class="item"><h2>Tea</h2><h2>50 da</h2></div>
-                    <div class="item"><h2>Milk Coffee</h2><h2>80 da</h2></div>
-                    <div class="item"><h2>Expresso and Milk</h2><h2>90 da</h2></div>
-                    <div class="item"><h2>Milk</h2><h2>40 da</h2></div>
-                    <div class="item"><h2>Nespresso</h2><h2>150 da</h2></div>
+                    <div class="item">
+                        <h2>Expresso</h2>
+                        <h2>50 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Tea</h2>
+                        <h2>50 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Milk Coffee</h2>
+                        <h2>80 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Expresso and Milk</h2>
+                        <h2>90 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Milk</h2>
+                        <h2>40 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Nespresso</h2>
+                        <h2>150 da</h2>
+                    </div>
                 </div>
                 <div id="cold-drinks" class="cold-drinks cat-itmes hidden">
-                    <div class="item"><h2>Juice</h2><h2>50 da</h2></div>
-                    <div class="item"><h2>Cola</h2><h2>80 da</h2></div>
-                    <div class="item"><h2>Milk Juice</h2><h2>80 da</h2></div>
-                    <div class="item"><h2>Energy Drink</h2><h2>100 da</h2></div>
-                    <div class="item"><h2>Pressed Juice</h2><h2>150 da</h2></div>
-                    <div class="item"><h2>Ice Coffee</h2><h2>150 da</h2></div>
+                    <div class="item">
+                        <h2>Juice</h2>
+                        <h2>50 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Cola</h2>
+                        <h2>80 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Milk Juice</h2>
+                        <h2>80 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Energy Drink</h2>
+                        <h2>100 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Pressed Juice</h2>
+                        <h2>150 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Ice Coffee</h2>
+                        <h2>150 da</h2>
+                    </div>
                 </div>
                 <div id="dessert" class="dessert cat-itmes hidden">
-                    <div class="item"><h2>Croissant</h2><h2>30 da</h2></div>
-                    <div class="item"><h2>Patstry Slice</h2><h2>100 da</h2></div>
-                    <div class="item"><h2>Millefielle</h2><h2>50 da</h2></div>
-                    <div class="item"><h2>Cake</h2><h2>60 da</h2></div>
-                    <div class="item"><h2>crêpes</h2><h2>250 da</h2></div>
-                    <div class="item"><h2>Shamiya</h2><h2>50 da</h2></div>
+                    <div class="item">
+                        <h2>Croissant</h2>
+                        <h2>30 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Patstry Slice</h2>
+                        <h2>100 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Millefielle</h2>
+                        <h2>50 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Cake</h2>
+                        <h2>60 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>crêpes</h2>
+                        <h2>250 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Shamiya</h2>
+                        <h2>50 da</h2>
+                    </div>
                 </div>
                 <div id="ice-cream" class="ice-cream cat-itmes hidden">
-                    <div class="item"><h2>Small Pot</h2><h2>50 da</h2></div>
-                    <div class="item"><h2>Medium Pot</h2><h2>100 da</h2></div>
-                    <div class="item"><h2>Big Pot</h2><h2>150 da</h2></div>
-                    <div class="item"><h2>Panaché</h2><h2>150 da</h2></div>
-                    <div class="item"><h2>Cornet</h2><h2>40 da</h2></div>
+                    <div class="item">
+                        <h2>Small Pot</h2>
+                        <h2>50 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Medium Pot</h2>
+                        <h2>100 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Big Pot</h2>
+                        <h2>150 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Panaché</h2>
+                        <h2>150 da</h2>
+                    </div>
+                    <div class="item">
+                        <h2>Cornet</h2>
+                        <h2>40 da</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <hr />
+
+    <section class="gallery">
+        <h1 class="hr-text" id="gallery">Our Gallery</h1>
+        <div class="gallery-content">
+
+            <div id="page1" class="page1">
+                <div class="row1">
+                    <img src="./src/assets/Gallery/06.jpg" alt="">
+                    <img src="./src/assets/Gallery/08.jpg" alt="">
+                    <img src="./src/assets/Gallery/09.jpg" alt="">
+                </div>
+    
+                <div class="row2">
+                    <img src="./src/assets/Gallery/10.jpg" alt="">
+                    <img src="./src/assets/Gallery/15.jpg" alt="">
+    
+                </div>
+    
+                <div class="row3">
+                    <img src="./src/assets/Gallery/02.jpg" alt="">
+                    <img src="./src/assets/Gallery/03.jpg" alt="">
+                    
+                </div>
+            </div>
+
+            <div id="page2" class="page2 hidden-page">
+                <div class="row1">
+                    <img src="./src/assets/Gallery/13.jpg" alt="">
+                    <img src="./src/assets/Gallery/18.jpg" alt="">
+                    <img src="./src/assets/Gallery/04.jpg" alt="">
+                </div>
+    
+                <div class="row2">
+                    <img src="./src/assets/Gallery/12.jpg" alt="">
+                    <img src="./src/assets/Gallery/11.jpg" alt="">
+                </div>
+    
+                <div class="row3">
+                    <img src="./src/assets/Gallery/07.jpg" alt="">
+                    <img src="./src/assets/Gallery/17.jpg" alt="">
+                </div>
+            </div>
+            
+            <div id="page3" class="page3 hidden-page">
+                <div class="row1">
+                    <img src="./src/assets/Gallery/05.jpg" alt="">
+                    <img src="./src/assets/Gallery/16.jpg" alt="">
+                </div>
+    
+                <div class="row2">
+                    <img src="./src/assets/Gallery/01.jpg" alt="">
+                </div>
+                
+                <div class="row3">
+                    <img src="./src/assets/Gallery/19.jpg" alt="">
+                    <img src="./src/assets/Gallery/14.jpg" alt="">
+                </div>
+            </div>
+            <div class="switchers">
+                <button onclick="switchToPage(1)" id="switcher-1" class="active-switcher"><span>1</span></button>
+                <button onclick="switchToPage(2)" id="switcher-2"><span>2</span></button>
+                <button onclick="switchToPage(3)" id="switcher-3"><span>3</span></button>
+                <button onclick="switchToPage(3)" id="switcher-end">>></button>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
     <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
     <script src="./index.js" async></script>
     <script src="./src/JS/Menu.js"></script>
+    <script src="./src/JS/Gallery.js"></script>
 </body>
+
 </html>
