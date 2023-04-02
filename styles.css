@@ -61,3 +61,10 @@ body {
     --text-wb-menu: #040404;
 }
 
+hr {
+    width: 80%;
+    margin: 0 auto;
+    height: 4px;
+    background-color: var(--text);
+    border-radius: 50%;
+}
