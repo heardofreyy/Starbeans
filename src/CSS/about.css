@@ -63,6 +63,10 @@
         flex-wrap: wrap;
     }
 
+     .about-us-content .img img {
+       width: 200px;
+    }
+
     .about-us-content .img{
         margin-top: -10px;
         width: 200px;
