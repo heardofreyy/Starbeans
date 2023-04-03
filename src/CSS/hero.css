@@ -116,6 +116,17 @@ section.hero .hero-text img {
     background-color: #38220f;
 }
 
+
+@keyframes rotation-onph {
+    0% {
+        transform: translate(0 - 0) rotate(0);
+    }
+
+    100% {
+        transform: translate(calc(50vw - (var(--coffee-cup-width))/ 2), 0) rotate(90deg);
+    }
+}
+
 @keyframes rotation {
     0% {
         transform: translate(0 - 0) rotate(0);
@@ -173,7 +184,7 @@ section.hero .hero-text img {
         --coffee-cup-width: 200px;
     }
 
-    section.hero .left{
+    section.hero .left {
         left: 32px;
     }
 
@@ -192,7 +203,8 @@ section.hero .hero-text img {
     }
 
     section.hero {
-        height: 400px;
+    background-size: contain;
+    height: 400px;
     }
 
 }
@@ -215,5 +227,71 @@ section.hero .hero-text img {
 
     section.hero {
         height: 300px;
+    }
+}
+
+@media (max-width: 625px) {
+
+    .coffee-cup {
+        top: 10px;
+        animation: rotation-onph 2s ease;
+        animation-fill-mode: forwards;
+    }
+
+    section.hero .left {
+        top: 250px;
+    }
+
+    section.hero .left {
+        left: calc((100vw - 400px)/2);
+    }
+
+    section.hero {
+        height: 500px;
+        /* background-size: contain; */
+
+    }
+    .hero .left .hero-btns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px) {
+
+    section.hero .left {
+        top: 230px;
+        left: calc((100vw - 300px)/2);
+    }
+
+    section.hero h1 {
+        font-size: 32px;
+    }
+
+    section.hero h2 {
+        font-size: 20px;
+        margin-top: -15px;
+    }
+
+    section.hero .hero-text img {
+        width: 150px;
+        margin-left: -10px;
+    }
+
+    .button-30 {
+        width: 90px;
+        height: 42px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    section.hero .hero-text img {
+        width: 120px;
+        margin-bottom: -10px;
+    }
+
+    .hero .left .hero-btns {
+        width: 100%;
     }
 }
