@@ -31,6 +31,15 @@
     .categories {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 200px 200px;
+    }
+}
+
+@media (max-width: 450px){
+    .categories .cat img {
+        width: 80px;
+    }
+    .categories .cat  {
+        font-size: 18px;
     }
 }
