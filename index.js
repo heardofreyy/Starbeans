@@ -4,6 +4,7 @@ const toggleDarkIcon = document.getElementById('toggle-dark');
 const headerLogo = document.getElementById('header-logo');
 const header = document.getElementById('header');
 const profile = document.getElementById('profile');
+const profileMenu = document.getElementById('profile-menu');
 const loader = document.getElementById('loader')
 const hero = document.getElementById('hero');
 
@@ -45,6 +46,7 @@ function changeToDark() {
     if (body.classList.contains('dark')) {
         headerLogo.src = "./src/assets/logo/Starbeans-logo-line-light.svg"
         profile.src = "./src/assets/icons/profile-light.svg"
+        profileMenu.src = "./src/assets/icons/profile-dark.svg"
         toggleDarkIcon.src = "./src/assets/icons/light.svg"
 
         hotDrinksCat.src = "./src/assets/icons/coffee-cup-light.png"
@@ -65,6 +67,7 @@ function changeToDark() {
         
         headerLogo.src = "./src/assets/logo/Starbeans-logo-line-dark.svg"
         profile.src = "./src/assets/icons/profile-dark.svg"
+        profileMenu.src = "./src/assets/icons/profile-light.svg"
         toggleDarkIcon.src = "./src/assets/icons/dark.svg"
 
         hotDrinksCat.src = "./src/assets/icons/coffee-cup-dark.png"

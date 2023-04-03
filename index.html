@@ -38,12 +38,24 @@
             <button onclick="location.href = '#gallery'">Gallery</button>
             <button onclick="location.href = '#contact'">Contact</button>
         </nav>
+        <div class="menu-header">
+            <nav id="nav-bar-menu" class="nav-bar-menu">
+                <button onclick="showProfile()" id="profile-btn" class="profile-btn-menu"><img id="profile-menu"
+                    src="./src/assets/icons/profile-light.svg" alt=""></button>
+                <button class="active" onclick="location.href = './index.html'">Home</button>
+                <button onclick="location.href = '#about-us'">About</button>
+                <button onclick="location.href = '#menu'">Menu</button>
+                <button onclick="location.href = '#gallery'">Gallery</button>
+                <button onclick="location.href = '#contact'">Contact</button>
+            </nav>
+        </div>
         <div class="right">
             <button onclick="toggleDark()" id="toggle-dark-btn" class="toggle-dark"><img id="toggle-dark"
                     src="./src/assets/icons/dark.svg" alt=""></button>
             <button onclick="showProfile()" id="profile-btn" class="profile-btn"><img id="profile"
                     src="./src/assets/icons/profile-dark.svg" alt=""></button>
-            <button class="menu-icon"><img id="menu-icon" src="./src/assets/icons/menu-dark.svg" alt=""></button>
+            <button onclick="openNavMenu();" class="menu-icon"><img id="menu-icon" src="./src/assets/icons/menu-dark.svg" alt=""></button>
+            
         </div>
     </header>
     <div id="loader">
@@ -230,47 +242,31 @@
         <div class="gallery-content">
 
             <div id="page1" class="page1">
-
                 <img src="./src/assets/Gallery/06.jpg" alt="">
                 <img src="./src/assets/Gallery/08.jpg" alt="">
                 <img src="./src/assets/Gallery/09.jpg" alt="">
-
                 <img src="./src/assets/Gallery/10.jpg" alt="">
                 <img src="./src/assets/Gallery/15.jpg" alt="">
-
                 <img src="./src/assets/Gallery/03.jpg" alt="">
-
             </div>
 
             <div id="page2" class="page2 hidden-page">
-
                 <img src="./src/assets/Gallery/14.jpg" alt="">
                 <img src="./src/assets/Gallery/12.jpg" alt="">
                 <img src="./src/assets/Gallery/18.jpg" alt="">
                 <img src="./src/assets/Gallery/11.jpg" alt="">
                 <img src="./src/assets/Gallery/13.jpg" alt="">
                 <img src="./src/assets/Gallery/04.jpg" alt="">
-
                 <!-- <img src="./src/assets/Gallery/17.jpg" alt=""> -->
-
-
-
-
-
             </div>
 
             <div id="page3" class="page3 hidden-page">
-
                 <img src="./src/assets/Gallery/02.jpg" alt="">
                 <img src="./src/assets/Gallery/01.jpg" alt="">
                 <img src="./src/assets/Gallery/07.jpg" alt="">
-
                 <img src="./src/assets/Gallery/16.jpg" alt="">
                 <img src="./src/assets/Gallery/05.jpg" alt="">
-
                 <img src="./src/assets/Gallery/19.jpg" alt="">
-                
-
             </div>
             <div class="switchers">
                 <button onclick="switchToPage(1)" id="switcher-1" class="active-switcher"><span>1</span></button>
@@ -283,7 +279,7 @@
 
     <hr />
 
-    <section>
+    <section class="about-us-sec">
         <h1 class="hr-text" id="about-us">About US</h1>
         <div class="about-us-content">
             <div class="img">
@@ -311,7 +307,7 @@
     </section>
 
 
-    <!-------------------------------------------- Footer ------------------------------------------------------>
+    <!------------- Footer -------------------------->
     <div class="footer-dark" style="font-family: Inter;">
         <footer>
             <div class="bscontainer">
@@ -369,11 +365,13 @@
                 <p class="copyright">StarBeans Coffee © 2023</p>
             </div>
         </footer>
+    </div>
 
         <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
         <script src="./index.js" async></script>
         <script src="./src/JS/Menu.js"></script>
         <script src="./src/JS/Gallery.js"></script>
+        <script src="./src/JS/HeaderMenu.js"></script>
 </body>
 
 </html>

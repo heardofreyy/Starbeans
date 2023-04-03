@@ -46,7 +46,7 @@ header img {
     padding: 5px;
 }
 
-#profile-btn #profile {
+#profile-btn #profile, #profile-btn #profile-menu  {
     width: 24px;
 }
 
@@ -77,6 +77,34 @@ header img {
     width: 100%;
 }
 
+
+.nav-bar-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    
+    right: 0;
+    top: 62px;
+    z-index: 1000;
+    width: 200px;
+    /* height: ; */
+    padding: 20px 0;
+}
+
+.nav-bar-menu button{
+    font-size: 22px;
+    color: var(--text-wb-menu);
+    border-top: solid 2px;
+    padding: 8px 0;
+    width: 70%;
+}
+
+.openNav {
+    display: flex;
+}
 
 @media (max-width: 675px) {
     .nav-bar {
