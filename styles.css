@@ -15,16 +15,18 @@
 
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-h1,h2,button {
+h1,
+h2,
+button {
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -45,8 +47,8 @@ button:active {
 
 body {
     --bg: #ece0d1;
-    --sec-bg : #dbc1ac;
-    --bg-menu:  #967259;
+    --sec-bg: #dbc1ac;
+    --bg-menu: #967259;
     --text: #634832;
     --text-wb: #040404;
     --text-wb-menu: #f4f4f4;
@@ -61,9 +63,9 @@ body {
 }
 
 .dark {
-    --bg:#634832 ;
-    --sec-bg : #38220f;
-    --bg-menu:  #967259;
+    --bg: #634832;
+    --sec-bg: #38220f;
+    --bg-menu: #967259;
     --text: #dbc1ac;
     --text-wb: #f4f4f4;
     --text-wb-menu: #040404;
@@ -77,9 +79,27 @@ hr {
     border-radius: 50%;
 }
 
-.hr-text{
+.hr-text {
     font-size: 48px;
     color: var(--text);
     text-align: center;
     padding: 30px;
 }
+
+@media (max-width: 600px) {
+    .hr-text {
+        font-size: 40px;
+
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .hr-text {
+        font-size: 35px;
+
+    }
+}
+
+
