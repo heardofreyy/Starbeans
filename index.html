@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./src/CSS/gallery.css">
     <link rel="stylesheet" href="./src/CSS/about.css">
     <link rel="stylesheet" href="./src/CSS/contact.css">
+    <link rel="stylesheet" href="./src/CSS/footer.css">
+
+     <!-- Icons -->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <link rel="icon" href="favico.svg">
     <title>StarBeans</title>
 </head>
@@ -25,7 +31,7 @@
         </div>
         <div class="nav-bar">
             <button class="active" onclick="location.href = './index.html'">Home</button>
-            <button onclick="location.href = './src/pages/about.html'">About</button>
+            <button onclick="location.href = '#about-us'">About</button>
             <button onclick="location.href = '#menu'">Menu</button>
             <button onclick="location.href = '#gallery'">Gallery</button>
         </div>
@@ -225,17 +231,17 @@
                     <img src="./src/assets/Gallery/08.jpg" alt="">
                     <img src="./src/assets/Gallery/09.jpg" alt="">
                 </div>
-    
+
                 <div class="row2">
                     <img src="./src/assets/Gallery/10.jpg" alt="">
                     <img src="./src/assets/Gallery/15.jpg" alt="">
-    
+
                 </div>
-    
+
                 <div class="row3">
                     <img src="./src/assets/Gallery/02.jpg" alt="">
                     <img src="./src/assets/Gallery/03.jpg" alt="">
-                    
+
                 </div>
             </div>
 
@@ -245,28 +251,28 @@
                     <img src="./src/assets/Gallery/18.jpg" alt="">
                     <img src="./src/assets/Gallery/04.jpg" alt="">
                 </div>
-    
+
                 <div class="row2">
                     <img src="./src/assets/Gallery/12.jpg" alt="">
                     <img src="./src/assets/Gallery/11.jpg" alt="">
                 </div>
-    
+
                 <div class="row3">
                     <img src="./src/assets/Gallery/07.jpg" alt="">
                     <img src="./src/assets/Gallery/17.jpg" alt="">
                 </div>
             </div>
-            
+
             <div id="page3" class="page3 hidden-page">
                 <div class="row1">
                     <img src="./src/assets/Gallery/05.jpg" alt="">
                     <img src="./src/assets/Gallery/16.jpg" alt="">
                 </div>
-    
+
                 <div class="row2">
                     <img src="./src/assets/Gallery/01.jpg" alt="">
                 </div>
-                
+
                 <div class="row3">
                     <img src="./src/assets/Gallery/19.jpg" alt="">
                     <img src="./src/assets/Gallery/14.jpg" alt="">
@@ -281,7 +287,89 @@
         </div>
     </section>
 
-    <hr/>
+    <hr />
+
+    <section>
+        <h1 class="hr-text" id="about-us">About US</h1>
+        <div class="about-us-content">
+            <div class="img">
+                <img id="about-img" src="./src/assets/logo/Starbeans-logo-circle-dark.svg" alt="">
+            </div>
+            <div class="text">
+                The best coffee shop in Algeria with more than 2500 customers per week <br/>
+                High quality beans and the experience of our employees make our coffee stronger, smell good and taste better <br/>
+                A lovely environment to study, work or chill while having your drink <br/>
+                We look forward to serving you at StatBeans Coffee and you more than welcome to visit us <br/>
+                <div class=" about">
+                    Visit Our Social Medias for more details : 
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram  fa-inverse icon-about"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook  fa-inverse icon-about"></i></a>
+                    <a href="https://goo.gl/maps/" target="_blank"><i class="fa fa-map-marker fa-inverse icon-about"></i></a>
+                    
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+
+       <!-------------------------------------------- Footer ------------------------------------------------------>
+       <div class="footer-dark" style="font-family: Inter;">
+        <footer>
+            <div class="bscontainer">
+                <div class="bsrow">
+                   <div class="bscol-md-2 item">
+                      <h3>Pages</h3>
+                      <ul>
+                         <li><a href="#index">Home</a></li>
+                         <li><a href="#menu">Menu</a></li>
+                         <li><a href="#">Login</a></li>
+                         <li><a href="#contact">Contact us</a></li>
+                      </ul>
+                   </div>
+                   <div class="bscol-md-2 item">
+                      <h3>Know More</h3>
+                      <ul>
+                         <li><a href="#">Membership</a></li>
+                         <li><a href="#">Our Team</a></li>
+                         <li><a href="#">News</a></li>
+                      </ul>
+                   </div>
+                   <div class="bscol-md-2 item">
+                      <h3>Other Details</h3>
+                      <ul>
+                         <li><a href="#">Privacy Policy</a></li>
+                         <li><a href="#">Terms of Service</a></li>
+                      </ul>
+                   </div>
+                   <div class="bscol-md-6 item text">
+                      <h3>StarBeans Coffee</h3>
+                      <p>High quality beans and the experience of our employees make our coffee stronger, smell good and taste better </p>
+                   </div>
+                   <div class="social_links">
+                      <a href="https://www.instagram.com/" target="_blank">
+                      <span class="fa-stack fa-lg ig combo">
+                         <i class="fa fa-circle fa-stack-2x circle"></i>
+                         <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
+                      </span>
+                      </a>
+                      <a href="https://www.facebook.com/" target="_blank">
+                      <span class="fa-stack fa-lg fb combo">
+                         <i class="fa fa-circle fa-stack-2x circle"></i>
+                         <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                      </span>
+                      </a>
+                      <a href="https://goo.gl/maps/" target="_blank">
+                      <span class="fa-stack fa-lg yt combo">
+                         <i class="fa fa-circle fa-stack-2x circle"></i>
+                         <i class="fa fa-map-marker fa-stack-1x fa-inverse icon"></i>
+                      </span>
+                      </a>
+                   </div>
+                </div>
+                <p class="copyright">StarBeans Coffee © 2023</p>
+             </div>
+        </footer>
 
     <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
     <script src="./index.js" async></script>

@@ -1,0 +1,38 @@
+.about-us-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.about-us-content .img {
+    width: 250px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.about-us-content .text {
+    max-width: 50%;
+    color: var(--text);
+}
+
+.about-us-content .text .about {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.about-us-content .text .about .icon-about{
+    color: var(--text);
+    font-size: 26px;
+}
+
+.about-us-content .text .about .icon-about:hover {
+    scale: .975;
+}
+
+.about-us-content .text .about .icon-about:active {
+    opacity: .7;
+}

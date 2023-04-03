@@ -17,6 +17,7 @@ const coldDrinksBtnIcon  = document.getElementById('cold-drinks-btn-icon');
 const dessertBtnIcon  = document.getElementById('dessert-btn-icon');
 const iceCreamBtnIcon  = document.getElementById('ice-cream-btn-icon');
 
+const aboutImg = document.getElementById('about-img')
 
 window.addEventListener('load', () => {
     console.log('loaded');
@@ -53,8 +54,9 @@ function changeToDark() {
         coldDrinksBtnIcon.src = "./src/assets/icons/juice-light.png"
         dessertBtnIcon.src = "./src/assets/icons/croissant-light.png"
         iceCreamBtnIcon.src = "./src/assets/icons/ice-cream-light.png"
-
-
+        
+        aboutImg.src = "./src/assets/logo/Starbeans-logo-circle-light.svg"
+        
     } else {
         
         headerLogo.src = "./src/assets/logo/Starbeans-logo-line-dark.svg"
@@ -71,6 +73,8 @@ function changeToDark() {
         dessertBtnIcon.src = "./src/assets/icons/croissant-dark.png"
         iceCreamBtnIcon.src = "./src/assets/icons/ice-cream-dark.png"
 
+        aboutImg.src = "./src/assets/logo/Starbeans-logo-circle-dark.svg"
+
     }
 
     
@@ -80,9 +84,10 @@ function toggleDark() {
 
     const isdarkLS = localStorage.getItem('isdark')
 
+
     if(isdarkLS === 'true') {
         localStorage.setItem('isdark', false)
-    }else if (isdarkLS === 'false' ) {
+    }else if (!isdarkLS || isdarkLS === 'false' ) {
         localStorage.setItem('isdark', true)
     }
 
