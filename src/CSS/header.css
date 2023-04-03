@@ -16,14 +16,22 @@ header {
     background-color: var(--sec-bg);
 }
 
-.toggle-dark {
+.menu-icon {
+    display: none;
+}
+
+.toggle-dark, .menu-icon {
     padding-top: 2.5px;
 }
 
-.toggle-dark img  {
+.toggle-dark img,  .menu-icon img  {
     width: 32px;
     background-color: transparent;
 
+}
+
+.menu-icon img {
+    width: 40px;
 }
 
 header img {
@@ -67,4 +75,19 @@ header img {
 .nav-bar button.active::after,
 .nav-bar button:hover::after{
     width: 100%;
+}
+
+
+@media (max-width: 675px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .profile-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }

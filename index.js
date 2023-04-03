@@ -19,6 +19,8 @@ const iceCreamBtnIcon  = document.getElementById('ice-cream-btn-icon');
 
 const aboutImg = document.getElementById('about-img')
 
+const menuIcon = document.getElementById('menu-icon')
+
 window.addEventListener('load', () => {
     console.log('loaded');
     // alert('loaded')
@@ -56,6 +58,8 @@ function changeToDark() {
         iceCreamBtnIcon.src = "./src/assets/icons/ice-cream-light.png"
         
         aboutImg.src = "./src/assets/logo/Starbeans-logo-circle-light.svg"
+
+        menuIcon.src = "./src/assets/icons/menu-light.svg"
         
     } else {
         
@@ -75,6 +79,7 @@ function changeToDark() {
 
         aboutImg.src = "./src/assets/logo/Starbeans-logo-circle-dark.svg"
 
+        menuIcon.src = "./src/assets/icons/menu-dark.svg"
     }
 
     
