@@ -10,7 +10,6 @@
 .about-us-content .img {
     width: 250px;
     display: flex;
-    /* justify-content: center; */
 }
 
 .about-us-content .text {
@@ -24,7 +23,7 @@
     align-items: center;
 }
 
-.about-us-content .text .about .icon-about{
+.about-us-content .text .about .icon-about {
     color: var(--text);
     font-size: 26px;
 }
@@ -35,4 +34,50 @@
 
 .about-us-content .text .about .icon-about:active {
     opacity: .7;
+}
+
+
+@media (max-width: 1100px) {
+    .about-us-content {
+        padding: 0 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 870px) {
+    .about-us-content .text {
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .about-us-content .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-us-content {
+        flex-wrap: wrap;
+    }
+
+    .about-us-content .img{
+        margin-top: -10px;
+        width: 200px;
+    }
+
+    
+
+    .about-us-content .text {
+        font-size: 15px;
+    }
+
+    @media (max-width: 870px) {
+        .about-us-content .text {
+            max-width: 85%;
+        }
+    }
+    
 }
