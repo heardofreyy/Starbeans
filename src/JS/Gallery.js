@@ -10,7 +10,8 @@ const switcher3 = document.getElementById('switcher-3');
 
 
 function switchToPage(page) {
-    console.log('switching to ' + page);
+
+    window.location.href = "#gallery"
 
     switch (page) {
 
@@ -19,26 +20,26 @@ function switchToPage(page) {
             switcher1.classList.add('active-switcher')
 
             page2.classList.add('hidden-page')
-            switcher1.classList.remove('active-switcher')
+            switcher2.classList.remove('active-switcher')
             page3.classList.add('hidden-page')
-            switcher1.classList.remove('active-switcher')
+            switcher3.classList.remove('active-switcher')
             break;
         case 2:
 
             page2.classList.remove('hidden-page')
-            switcher1.classList.add('active-switcher')
+            switcher2.classList.add('active-switcher')
 
             page1.classList.add('hidden-page')
             switcher1.classList.remove('active-switcher')
             page3.classList.add('hidden-page')
-            switcher1.classList.remove('active-switcher')
+            switcher3.classList.remove('active-switcher')
             break;
         case 3:
             page3.classList.remove('hidden-page')
-            switcher1.classList.add('active-switcher')
+            switcher3.classList.add('active-switcher')
 
             page2.classList.add('hidden-page')
-            switcher1.classList.remove('active-switcher')
+            switcher2.classList.remove('active-switcher')
             page1.classList.add('hidden-page')
             switcher1.classList.remove('active-switcher')
             break;
