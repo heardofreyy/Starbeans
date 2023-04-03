@@ -284,7 +284,12 @@ section.hero .hero-text img {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
+
+    section.hero .left {
+        left: calc((100vw - 315px)/2);
+    }
+
 
     section.hero .hero-text img {
         width: 120px;
