@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 42px;
+    gap: 30px;
     width: 100%;
 }
 
