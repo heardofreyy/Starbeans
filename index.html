@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./src/CSS/loader.css">
     <link rel="stylesheet" href="./src/CSS/header.css">
@@ -16,9 +18,9 @@
     <link rel="stylesheet" href="./src/CSS/contact.css">
     <link rel="stylesheet" href="./src/CSS/footer.css">
 
-     <!-- Icons -->
-     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="icon" href="favico.svg">
     <title>StarBeans</title>
@@ -29,12 +31,13 @@
         <div class="left">
             <img id="header-logo" src="./src/assets/logo/Starbeans-logo-line-dark.svg" alt="">
         </div>
-        <div class="nav-bar">
+        <nav class="nav-bar">
             <button class="active" onclick="location.href = './index.html'">Home</button>
             <button onclick="location.href = '#about-us'">About</button>
             <button onclick="location.href = '#menu'">Menu</button>
             <button onclick="location.href = '#gallery'">Gallery</button>
-        </div>
+            <button onclick="location.href = '#contact'">Contact</button>
+        </nav>
         <div class="right">
             <button onclick="toggleDark()" id="toggle-dark-btn" class="toggle-dark"><img id="toggle-dark"
                     src="./src/assets/icons/dark.svg" alt=""></button>
@@ -60,8 +63,8 @@
                 <h2>complete your day and get your <br> favorite drink now</h2>
                 <br>
                 <div class="hero-btns">
-                    <button class="shop-now button-30">Shop Now</button>
-                    <button class="about-us button-30">About Us</button>
+                    <button onclick="location.href = '#menu'" class="shop-now button-30">Shop Now</button>
+                    <button onclick="location.href = '#about-us'" class="about-us button-30">About Us</button>
                 </div>
             </div>
         </div>
@@ -226,23 +229,17 @@
         <div class="gallery-content">
 
             <div id="page1" class="page1">
-                <div class="row1">
-                    <img src="./src/assets/Gallery/06.jpg" alt="">
-                    <img src="./src/assets/Gallery/08.jpg" alt="">
-                    <img src="./src/assets/Gallery/09.jpg" alt="">
-                </div>
 
-                <div class="row2">
-                    <img src="./src/assets/Gallery/10.jpg" alt="">
-                    <img src="./src/assets/Gallery/15.jpg" alt="">
+                <img src="./src/assets/Gallery/06.jpg" alt="">
+                <img src="./src/assets/Gallery/08.jpg" alt="">
+                <img src="./src/assets/Gallery/09.jpg" alt="">
 
-                </div>
+                <img src="./src/assets/Gallery/10.jpg" alt="">
+                <img src="./src/assets/Gallery/15.jpg" alt="">
 
-                <div class="row3">
-                    <img src="./src/assets/Gallery/02.jpg" alt="">
-                    <img src="./src/assets/Gallery/03.jpg" alt="">
+                <img src="./src/assets/Gallery/03.jpg" alt="">
+                <!-- <img src="./src/assets/Gallery/02.jpg" alt=""> -->
 
-                </div>
             </div>
 
             <div id="page2" class="page2 hidden-page">
@@ -296,85 +293,90 @@
                 <img id="about-img" src="./src/assets/logo/Starbeans-logo-circle-dark.svg" alt="">
             </div>
             <div class="text">
-                The best coffee shop in Algeria with more than 2500 customers per week <br/>
-                High quality beans and the experience of our employees make our coffee stronger, smell good and taste better <br/>
-                A lovely environment to study, work or chill while having your drink <br/>
-                We look forward to serving you at StatBeans Coffee and you more than welcome to visit us <br/>
+                The best coffee shop in Algeria with more than 2500 customers per week <br />
+                High quality beans and the experience of our employees make our coffee stronger, smell good and taste
+                better <br />
+                A lovely environment to study, work or chill while having your drink <br />
+                We look forward to serving you at StatBeans Coffee and you more than welcome to visit us <br />
                 <div class=" about">
-                    Visit Our Social Medias for more details : 
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram  fa-inverse icon-about"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook  fa-inverse icon-about"></i></a>
-                    <a href="https://goo.gl/maps/" target="_blank"><i class="fa fa-map-marker fa-inverse icon-about"></i></a>
-                    
-                 </div>
+                    Visit Our Social Medias for more details :
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa fa-instagram  fa-inverse icon-about"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fa fa-facebook  fa-inverse icon-about"></i></a>
+                    <a href="https://goo.gl/maps/" target="_blank"><i
+                            class="fa fa-map-marker fa-inverse icon-about"></i></a>
+
+                </div>
 
             </div>
         </div>
     </section>
 
 
-       <!-------------------------------------------- Footer ------------------------------------------------------>
-       <div class="footer-dark" style="font-family: Inter;">
+    <!-------------------------------------------- Footer ------------------------------------------------------>
+    <div class="footer-dark" style="font-family: Inter;">
         <footer>
             <div class="bscontainer">
                 <div class="bsrow">
-                   <div class="bscol-md-2 item">
-                      <h3>Pages</h3>
-                      <ul>
-                         <li><a href="#index">Home</a></li>
-                         <li><a href="#menu">Menu</a></li>
-                         <li><a href="#">Login</a></li>
-                         <li><a href="#contact">Contact us</a></li>
-                      </ul>
-                   </div>
-                   <div class="bscol-md-2 item">
-                      <h3>Know More</h3>
-                      <ul>
-                         <li><a href="#">Membership</a></li>
-                         <li><a href="#">Our Team</a></li>
-                         <li><a href="#">News</a></li>
-                      </ul>
-                   </div>
-                   <div class="bscol-md-2 item">
-                      <h3>Other Details</h3>
-                      <ul>
-                         <li><a href="#">Privacy Policy</a></li>
-                         <li><a href="#">Terms of Service</a></li>
-                      </ul>
-                   </div>
-                   <div class="bscol-md-6 item text">
-                      <h3>StarBeans Coffee</h3>
-                      <p>High quality beans and the experience of our employees make our coffee stronger, smell good and taste better </p>
-                   </div>
-                   <div class="social_links">
-                      <a href="https://www.instagram.com/" target="_blank">
-                      <span class="fa-stack fa-lg ig combo">
-                         <i class="fa fa-circle fa-stack-2x circle"></i>
-                         <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
-                      </span>
-                      </a>
-                      <a href="https://www.facebook.com/" target="_blank">
-                      <span class="fa-stack fa-lg fb combo">
-                         <i class="fa fa-circle fa-stack-2x circle"></i>
-                         <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
-                      </span>
-                      </a>
-                      <a href="https://goo.gl/maps/" target="_blank">
-                      <span class="fa-stack fa-lg yt combo">
-                         <i class="fa fa-circle fa-stack-2x circle"></i>
-                         <i class="fa fa-map-marker fa-stack-1x fa-inverse icon"></i>
-                      </span>
-                      </a>
-                   </div>
+                    <div class="bscol-md-2 item">
+                        <h3>Pages</h3>
+                        <ul>
+                            <li><a href="#index">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="bscol-md-2 item">
+                        <h3>Know More</h3>
+                        <ul>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="bscol-md-2 item">
+                        <h3>Other Details</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="bscol-md-6 item text">
+                        <h3>StarBeans Coffee</h3>
+                        <p>High quality beans and the experience of our employees make our coffee stronger, smell good
+                            and taste better </p>
+                    </div>
+                    <div class="social_links">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <span class="fa-stack fa-lg ig combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <span class="fa-stack fa-lg fb combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+                        <a href="https://goo.gl/maps/" target="_blank">
+                            <span class="fa-stack fa-lg yt combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fa fa-map-marker fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
                 <p class="copyright">StarBeans Coffee © 2023</p>
-             </div>
+            </div>
         </footer>
 
-    <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
-    <script src="./index.js" async></script>
-    <script src="./src/JS/Menu.js"></script>
-    <script src="./src/JS/Gallery.js"></script>
+        <img id="bgImg" src="./src/assets/IMG/wooden.jpg" alt="">
+        <script src="./index.js" async></script>
+        <script src="./src/JS/Menu.js"></script>
+        <script src="./src/JS/Gallery.js"></script>
 </body>
 
 </html>

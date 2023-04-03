@@ -57,3 +57,20 @@
     border: solid 2px var(--text) !important;
 
 }
+
+@media (max-width: 1050px)  {
+    .page1,.page2,.page3{
+        justify-content: center;
+        grid-template-columns: repeat(2, 320px);
+    }
+}
+
+@media (max-width: 700px)  {
+    .page1,.page2,.page3{
+        transform: scale(.7);
+    transform-origin: center center; 
+    -webkit-transform-origin: center center; 
+    -ms-transform-origin: center center; 
+    -moz-transform-origin: center center;
+    }
+}
