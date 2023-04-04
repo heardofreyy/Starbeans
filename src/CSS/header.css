@@ -8,12 +8,12 @@ header .right {
 
 
 header {
+    position: relative;
     z-index: 9999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 10px;
     background-color: var(--sec-bg);
     overflow: hidden;
 }
@@ -46,6 +46,7 @@ header img {
     border: solid var(--text);
     border-radius: 50%;
     padding: 5px;
+    margin-right: 10px;
 }
 
 #profile-btn #profile, #profile-btn #profile-menu  {
@@ -55,6 +56,8 @@ header img {
 .nav-bar {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    right: calc(50% - 152.52px);
     gap: 15px;
 }
 
@@ -87,12 +90,10 @@ header img {
     justify-content: center;
     align-items: center;
     background-color: var(--text);
-    
     right: 0;
     top: 62px;
     z-index: 1000;
     width: 200px;
-    /* height: ; */
     padding: 20px 0;
     animation: openMenu 1s ease;
 }
