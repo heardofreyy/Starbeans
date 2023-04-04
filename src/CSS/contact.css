@@ -1,7 +1,4 @@
-
-
-            
-.contact{ 
+.contact {
     color: var(--text);
     margin: 0 auto;
     margin-top: 100px;
@@ -11,10 +8,10 @@
     align-items: center;
     padding: 80px 0;
     background-color: var(--bg);
-    box-shadow: 1px 0px 39px -7px rgba(0,0,0,0.72);
-    -webkit-box-shadow: 1px 0px 39px -7px rgba(0,0,0,0.72);
-    -moz-box-shadow: 1px 0px 39px -7px rgba(0,0,0,0.72);
-    
+    box-shadow: 1px 0px 39px -7px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 1px 0px 39px -7px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 1px 0px 39px -7px rgba(0, 0, 0, 0.72);
+
 }
 
 .contact-title h1 {
@@ -22,20 +19,20 @@
     margin-top: -100px;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 32px;
     font-weight: 500;
     /* color: #fff; */
 }
 
-.contact p{
+.contact p {
     font-weight: 300;
     /* color: #fff; */
 }
 
-        /*Contact Info (left side)*/
+/*Contact Info (left side)*/
 
-.contact .contactInfo{
+.contact .contactInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -44,9 +41,10 @@
 .contact .contactInfo .box {
     position: relative;
     padding: 20px 0;
-    display:  flex;
+    display: flex;
 }
-.contact .contactInfo .box .icon{
+
+.contact .contactInfo .box .icon {
     min-width: 30px;
     height: 45px;
     display: flex;
@@ -56,7 +54,7 @@
     color: var(--text);
 }
 
-.contact .contactInfo .box .text{
+.contact .contactInfo .box .text {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -64,13 +62,13 @@
     font-weight: 300;
 }
 
-.contact .contactInfo .box .text h3{
+.contact .contactInfo .box .text h3 {
     font-weight: 500;
 }
 
-        /*Contact Form (right side)*/
+/*Contact Form (right side)*/
 
-.contactForm{
+.contactForm {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -78,20 +76,21 @@
     background-color: var(--text);
 }
 
-.contactForm h2{
+.contactForm h2 {
     font-size: 30px;
     color: var(--bg);
     font-weight: 500;
     margin-bottom: 40px;
 }
 
-.contactForm .inputBox{
+.contactForm .inputBox {
     position: relative;
-    width: 100% ;
+    width: 100%;
     margin-top: 10px;
 }
+
 .contactForm .inputBox input,
-.contactForm .inputBox textarea{
+.contactForm .inputBox textarea {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -103,7 +102,7 @@
     background-color: var(--text);
 }
 
-.contactForm .inputBox span{
+.contactForm .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -114,10 +113,10 @@
     color: var(--text-wb-menu);
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span{
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
 
     color: var(--bg);
     font-size: 15px;
@@ -127,20 +126,20 @@
 
 
 
-.contactForm .inputBox input[type="submit"]{
+.contactForm .inputBox input[type="submit"] {
     margin-top: 20px;
     width: 100px;
     background: var(--bg);
-    border:none;
+    border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 18px;
-    color: #f4f4f4;
+    color: var(--text);
     transition: 0.3s;
-    
+
 }
 
-.contactForm .inputBox input[type="submit"]:hover{
+.contactForm .inputBox input[type="submit"]:hover {
 
     background: var(--sec-bg);
     scale: .975;
@@ -149,7 +148,7 @@
 
 
 
-.contactForm .inputBox input[type="submit"]:active{
+.contactForm .inputBox input[type="submit"]:active {
     opacity: .7;
 }
 
@@ -162,7 +161,7 @@
         justify-content: space-around;
     }
 
-    .contact .contactInfo{
+    .contact .contactInfo {
         width: 40%;
     }
 
@@ -172,8 +171,6 @@
     }
 }
 
-
-
 @media (max-width: 950px) {
 
     .contact {
@@ -182,7 +179,7 @@
         gap: 10px;
     }
 
-    .contact .contactInfo{
+    .contact .contactInfo {
         width: 70%;
     }
 
@@ -204,14 +201,11 @@
 
 
     .contact .contactInfo .box {
-        
+
         padding: 15px 0;
-        display:  flex;
+        display: flex;
     }
 }
-
-
-
 
 @media (max-width: 550px) {
 
@@ -221,12 +215,12 @@
         gap: 10px;
     }
 
-    .contactForm h2{
+    .contactForm h2 {
         font-size: 24px;
         margin-bottom: 20px;
     }
 
-    .contact .contactInfo{
+    .contact .contactInfo {
         width: 80%;
     }
 
@@ -242,16 +236,14 @@
 
     .contact .contactInfo .box {
         padding: 10px 0;
-        
+
     }
 }
-
-
 
 @media (max-width: 360px) {
 
 
-    .contact .contactInfo{
+    .contact .contactInfo {
         width: 80%;
         scale: .9;
     }
@@ -264,33 +256,10 @@
     .contactForm .inputBox {
         margin: 0;
     }
+
     .contact-title h1 {
         margin-top: -30px;
     }
 
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
