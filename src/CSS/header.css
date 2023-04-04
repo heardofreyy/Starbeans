@@ -8,12 +8,14 @@ header .right {
 
 
 header {
+    z-index: 9999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
     background-color: var(--sec-bg);
+    overflow: hidden;
 }
 
 .menu-icon {
@@ -92,6 +94,7 @@ header img {
     width: 200px;
     /* height: ; */
     padding: 20px 0;
+    animation: openMenu 1s ease;
 }
 
 .nav-bar-menu button{
@@ -105,6 +108,17 @@ header img {
 .openNav {
     display: flex;
 }
+
+@keyframes openMenu {
+    0% {
+        opacity: .8;
+    }
+
+    100%{ 
+        opacity: 1;
+
+    }
+} 
 
 @media (max-width: 675px) {
     .nav-bar {
