@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_logo {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.login_container {
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: calc(var(--radius)-3px);
+    background-color: #634832;
+    color: #ece0d1;
+    padding: 25px 40px;
+    gap: 20px;
+}
+
+.login_container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+form>h5 {
+    padding-bottom: 3px;
+}
+
+.login_container>form>input {
+    vertical-align: middle;
+    outline: 0;
+    padding-left: 7px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 2px solid #ece0d1;
+    border-radius: 3px;
+    width: 100%;
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=email],
+input[type=search] {
+    background-color: #fff;
+    line-height: normal;
+}
+
+.login_container>form>input:focus {
+    border-color: #38220f;
+    box-shadow: 0 0 3px 2px var(--prim-color);
+}
+
+.login_container>p {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: -20px;
+}
+
+.login_signInButton {
+    padding-top: 4px;
+    color: #ece0d1;
+    font-size: 18px;
+    background-color: #38220f;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+.login_registerButton {
+    border-radius: calc(var(--radius)-6px);
+    background-color: #dbc1ac;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.login_registerButton:hover {
+    background-color: #ece0d1;
+}
+
+.login_signInButton:hover {
+    background-color: #38220f9a;
+}
+
+.login_signInButton:active,
+.login_registerButton:active {
+    scale: 0.975;
+}
+
+#by {
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .login_container {
+        scale: .9;
+        margin-top: -20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .login_container {
+        scale: .8;
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .login_container {
+        scale: .75;
+        margin-top: -60px;
+    }
+}

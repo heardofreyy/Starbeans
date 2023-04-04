@@ -54,13 +54,14 @@ body {
     --text-wb: #040404;
     --text-wb-menu: #f4f4f4;
 
+    --radius: 10px;
 
     --yy: #967259;
 
 
     background-color: var(--bg);
     font-family: 'Tajawal-Regular';
-    min-height: 3000px;
+    /* min-height: 3000px; */
 }
 
 .dark {
