@@ -17,5 +17,5 @@ https://heardofreyy.github.io/Starbeans/
 # Dark Mode :
 ![StarBeans](https://user-images.githubusercontent.com/85818002/229987563-5d95b641-42ea-4118-83e9-3e6f1e53f60b.png)
 
-#Phone : 
-![StarBeans phone](https://user-images.githubusercontent.com/85818002/229988913-d4a78aa0-aa10-4d54-9a21-1603db493f23.png)
+# Phone : 
+![StarBeans phone light](https://user-images.githubusercontent.com/85818002/229989850-22ec7796-2f5b-4f6d-920f-b129a9bb95d1.png)
