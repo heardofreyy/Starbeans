@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--sec-bg);
-    overflow: hidden;
+    padding-right: 10px;
 }
 
 .menu-icon {
